@@ -30,7 +30,6 @@ steps:
       
       xcodebuild -version
       
-      systemstaus
       
       df -h
       
