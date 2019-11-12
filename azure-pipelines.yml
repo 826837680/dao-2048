@@ -24,15 +24,7 @@ steps:
       
       # Use the environment variables input below to pass secret variables to this script
       
-      ifconfig
-      
-      echo $PATH
-      
-      xcodebuild -version
-      
-      
       df -h
-      
-      ls -ltr /Users/vsts
-      
-      systemstats
+      pwd
+      ls -ltr
+      ls -l /Applications
