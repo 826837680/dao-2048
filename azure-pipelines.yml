@@ -20,11 +20,11 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: '# Write your commands here'
+    script: '# Write your commands here
       
       # Use the environment variables input below to pass secret variables to this script
       
       df -h
       pwd
       ls -ltr
-      ls -l /Applications
+      ls -l /Applications'
