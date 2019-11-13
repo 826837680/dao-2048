@@ -20,11 +20,6 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: '# Write your commands here
+    script: 'df -h;ls -ltr;ls -l /Applications/'
       
       # Use the environment variables input below to pass secret variables to this script
-      
-      df -h
-      pwd
-      ls -ltr
-      ls -l /Applications'
