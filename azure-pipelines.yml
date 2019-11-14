@@ -16,21 +16,21 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-  displayName: '
-  ls -ltr;
-  pwd;
-  echo “获取当前Mac 操作系统 版本号和编译版本号.”;
-  sw_vers;
-  echo ”uname -a读取到Mac 操作系统的信息“;
-  uname -a;
-  echo "system_profiler读取系统信息";
-  system_profiler -detailLevel full;
-  echo "system_profiler读取系统信息--硬件数据类型"; 
-  system_profiler SPHardwareDataType;
-  '
+  displayName: 'hello'
+
+
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'df -h;ls -ltr;ls -l /Applications/'
-      
-      # Use the environment variables input below to pass secret variables to this script
+    script: |
+      # Write your commands here
+        ls -ltr
+        pwd
+        echo “获取当前Mac 操作系统 版本号和编译版本号.”
+        sw_vers
+        echo ”uname -a读取到Mac 操作系统的信息“
+        uname -a
+        echo "system_profiler读取系统信息"
+        system_profiler -detailLevel full
+        echo "system_profiler读取系统信息--硬件数据类型"
+        system_profiler SPHardwareDataType
